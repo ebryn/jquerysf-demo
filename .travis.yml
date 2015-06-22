@@ -30,5 +30,5 @@ script:
 
 env:
   global:
-    - SAUCE_USERNAME=jquerysf-demo-ebryn
+    - SAUCE_USERNAME=ebryn-jquerysf-demo
     - SAUCE_ACCESS_KEY=e66d36ff-637f-4b0a-9523-0d8b826b75f2
