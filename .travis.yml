@@ -14,6 +14,12 @@ before_install:
   - "npm config set spin false"
   - "npm install -g npm@^2"
 
+before_script:
+    - ember sauce:connect
+
+after_script:
+    - ember sauce:disconnect
+
 install:
   - npm install -g bower
   - npm install
@@ -21,3 +27,8 @@ install:
 
 script:
   - npm test
+
+env:
+  global:
+    - SAUCE_USERNAME=jquerysf-demo-ebryn
+    - SAUCE_ACCESS_KEY=e66d36ff-637f-4b0a-9523-0d8b826b75f2
